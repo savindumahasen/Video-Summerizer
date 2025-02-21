@@ -32,3 +32,15 @@ st.set_page_config(
 )
 
 st.title("Video Summerizer AI agent")
+
+@st.cache_resource()
+def initialize_agent():
+    return Agent(
+        name="Video Summerize Agent",
+        model=Gemini(id="gemini-2.0-flash-exp"),
+        tools=[DuckDuckGo()],
+        markdown=True
+    )
+
+## Initialize the Multimodel agent
+multimodel_Agent=initialize_agent()
