@@ -26,8 +26,8 @@ if GOOGLE_API_KEY:
 ## Page configuration
 
 st.set_page_config(
-    page_title="Multimodel AI",
-    page_icon="",
+    page_title="Video Summerizer",
+    page_icon="😊",
     layout="wide"
 )
 
