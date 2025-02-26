@@ -2,7 +2,5 @@ phidata
 python-dotenv
 duckduckgo-search
 uvicorn
-groq
-flask
 google-generativeai
 streamlit
