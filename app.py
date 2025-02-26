@@ -15,21 +15,21 @@ load_dotenv()
 
 import os
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-if GOOGLE_API_KEY:
-    genai.configure(api_key=GOOGLE_API_KEY)
+if GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
 
 
 ## Page configuration
 
 st.set_page_config(
     page_title="Video Summerizer",
-    page_icon="😊",
+    page_icon="🎥",
     layout="wide"
 )
 
-st.title("Video Summerizer AI agent")
+st.title("Video Summerizer AI agent 🎥🎤🖬")
 
 @st.cache_resource()
 def initialize_agent():
